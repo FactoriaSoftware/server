@@ -34,9 +34,11 @@ var modalidadRoute = require('./routes/modalidad');
 var programaRoute = require('./routes/programa');
 var ProyectoGradoRoute = require('./routes/ProyectoGrado');
 var documentRoute = require('./routes/document');
+var tutoresRoute = require('./routes/tutores');
 
 
 // Rutas
+app.use('/tutores', tutoresRoute);
 app.use('/sendFile', sendFileRoute);
 app.use('/uploadFile', uploadFileRoute);
 app.use('/api/subir', documentRoute);

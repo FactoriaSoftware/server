@@ -9,6 +9,7 @@ var proyectoSchema = new Schema({
 
     estudiante: { type: Schema.Types.ObjectId, required: true, ref: 'Estudiante' },
     modalidad: { type: Schema.Types.ObjectId, required: true, ref: 'Modalidad' },
+    tutor: { type: Schema.Types.ObjectId, required: false, ref: 'Administrativo' },
 
     nombreEst2: { type: String, required: true },
     codigoEst2: { type: String, required: true },

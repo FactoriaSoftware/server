@@ -48,7 +48,7 @@ app.get('/:id', [mdAuth.VerificarToken], (req, res) => {
     proyectogrado.findById(id)
         .populate('estudiante')
         //.populate('empresa')
-        //.populate('vacante')
+        .populate('vacante')
         .populate('tutor')
         .exec((err, proyectogrado) => {
 
